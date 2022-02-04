@@ -81,6 +81,18 @@ html {
   background: #555;
 }
 
+.main {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgb(255, 255, 255)
+    ),
+    url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -142,7 +154,7 @@ html {
 .container {
   /* width: 100%; */
   text-align: center;
-  margin-top: 5rem;
+  padding-top: 5rem;
 }
 
 .container-details {

@@ -5,16 +5,19 @@ let data = [],
   dates = [];
 
 const countryNameElement = document.querySelector('.country');
+
 const totalCasesElement = document.querySelector('.total-cases .details-cases');
 const newCasesElement = document.querySelector(
   '.total-cases .details-cases-add'
 );
+
 const recoveredCasesElement = document.querySelector(
   '.recovered .details-recovered'
 );
 const newRecoveredElement = document.querySelector(
   '.recovered .details-recovered-add'
 );
+
 const deathCasesElement = document.querySelector('.deaths .details-deaths');
 const newDeathsElement = document.querySelector('.deaths .details-deaths-add');
 
@@ -188,4 +191,3 @@ function chart() {
     },
   });
 }
-
