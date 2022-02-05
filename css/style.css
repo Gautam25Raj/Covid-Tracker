@@ -174,9 +174,15 @@ html {
   font-size: 2rem;
   color: #3e3e3e;
   letter-spacing: 1px;
-  background-color: transparent;
   border: 0;
   cursor: pointer;
+  background-color: rgba(255, 136, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.country-change:hover {
+  transform: scale(1.05);
 }
 
 .search-country {
@@ -330,4 +336,44 @@ html {
   letter-spacing: 0.1rem;
   margin-top: 4rem;
   font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .chart-2 {
+    flex-direction: column;
+  }
+
+  .chart-s {
+    width: 100%;
+  }
+
+  .deaths-chart {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 1rem 2rem 1rem 0;
+  }
+
+  .container-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details {
+    margin-bottom: 4rem;
+    width: 90%;
+  }
+
+  .chart {
+    width: 95%;
+  }
 }
