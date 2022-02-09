@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Covid Tracker</title>
   </head>
@@ -18,13 +19,25 @@
         </h2>
       </div>
 
+      <ul class="navigation">
+        <li class="navigation-item">
+          <a class="navigation-link" href="symptom.html">Symptom</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="precaution.html">Precaution</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="main">
       <div class="live">
         <div class="live-dot"></div>
         <p class="live-live">Live</p>
       </div>
-    </header>
 
-    <main class="main">
       <section class="container">
         <h1 class="country">Loading...</h1>
         <button class="country-change">Change</button>
@@ -96,6 +109,6 @@
     ></script>
 
     <script src="js/country.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/apiData.js"></script>
   </body>
 </html>
