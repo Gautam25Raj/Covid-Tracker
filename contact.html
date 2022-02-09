@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <title>Covid Tracker</title>
   </head>
   <body>
@@ -29,10 +29,80 @@
         <li class="navigation-item">
           <a class="navigation-link" href="precaution.html">Precaution</a>
         </li>
-        
       </ul>
     </header>
 
+    <main>
+      <form class="form">
+        <section>
+          <p class="form-control">
+            <input
+              type="text"
+              id="name"
+              name="username"
+              required
+              autocomplete="off"
+            />
+            <label for="name">
+              <span>Name</span>
+            </label>
+          </p>
+
+          <p class="form-control">
+            <input
+              type="email"
+              id="mail"
+              name="useremail"
+              required
+              autocomplete="off"
+            />
+            <label for="mail">
+              <span>Email</span>
+            </label>
+          </p>
+
+          <p class="form-control">
+            <input
+              type="number"
+              id="number"
+              name="usermobile"
+              required
+              autocomplete="off"
+            />
+            <label for="number">
+              <span>Mobile No.</span>
+            </label>
+          </p>
+
+          <p class="form-control">
+            <textarea
+              type="message"
+              id="message"
+              name="usermobile"
+              required
+            ></textarea>
+            <label for="message">
+              <span>Message</span>
+            </label>
+          </p>
+        </section>
+
+        <section>
+          <p class="form-control">
+            <button type="submit" class="btn click shadow form-btn">
+              send
+            </button>
+          </p>
+        </section>
+      </form>
+
+      <div class="contact-svg">
+        <img src="img/contact.svg" alt="Contact Us" />
+      </div>
+    </main>
+
     <footer class="footer">Copyright &copy; 2022</footer>
+
+    <script src="js/form.js"></script>
   </body>
 </html>

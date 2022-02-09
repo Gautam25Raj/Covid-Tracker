@@ -1,0 +1,102 @@
+main {
+  display: flex;
+  padding: 0 6rem;
+}
+
+.form {
+  margin-top: 6rem;
+  width: 40%;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-control:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.form-control label {
+  position: absolute;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+  top: 0.6rem;
+  color: #3e3e3e;
+}
+
+.form-control label span {
+  font-size: 1.8rem;
+  display: inline-block;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input,
+.form-control textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0;
+  font-size: 1.6rem;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 3px solid #3e3e3e;
+  transition: transform 0.3s, color 0.3s, border-bottom 0.3s;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+}
+
+.form-control input:focus:valid,
+.form-control textarea:focus:valid {
+  border-bottom: 3px solid limegreen;
+}
+
+.form-control input:focus:invalid,
+.form-control textarea:focus:invalid {
+  border-bottom: 3px solid #ee4545;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span,
+.form-control textarea:focus + label span,
+.form-control textarea:valid + label span {
+  transform: translateY(-30px);
+}
+
+.form-control input:focus:invalid + label,
+.form-control textarea:focus:invalid + label {
+  color: #ee4545;
+}
+
+.form-control input:valid + label span,
+.form-control textarea:focus:valid + label span {
+  color: limegreen;
+}
+
+.form-control textarea {
+  width: 100.1%;
+  height: 14rem;
+}
+
+.form-control .form-btn {
+  width: 100%;
+  margin: 6rem 0 0;
+  padding: 1.6rem 0;
+  background-color: #3e3e3e;
+  color: #fff;
+  border: 0;
+  font-size: 1.6rem;
+}
+
+.contact-svg {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-svg img {
+  width: 90%;
+}
