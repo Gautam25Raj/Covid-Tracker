@@ -1,140 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 100;
-  src: local(''), url('../fonts/roboto-v27-latin-100.woff2') format('woff2'),
-    url('../fonts/roboto-v27-latin-100.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local(''), url('../fonts/roboto-v27-latin-300.woff2') format('woff2'),
-    url('../fonts/roboto-v27-latin-300.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local(''), url('../fonts/roboto-v27-latin-500.woff2') format('woff2'),
-    url('../fonts/roboto-v27-latin-500.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''), url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'),
-    url('../fonts/roboto-v27-latin-regular.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''), url('../fonts/roboto-v27-latin-700.woff2') format('woff2'),
-    url('../fonts/roboto-v27-latin-700.woff') format('woff');
-  font-display: swap;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-.main {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgb(255, 255, 255)
-    ),
-    url('../img/background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 4rem;
-  height: 10rem;
-  background-color: #3e3e3e;
-}
-
-.hide {
-  display: none;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.logo-img {
-  height: 100%;
-}
-
-.logo-head {
-  font-weight: 400;
-  font-size: 3rem;
-  color: #fff;
-}
-
-.logo-head-1 {
-  display: block;
-}
-
-.logo-head-2 {
-  margin-left: 4rem;
-}
-
 .live {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  padding: 2rem 6rem 0 2rem;
 }
 
 .live-dot {
@@ -148,13 +16,13 @@ html {
   text-transform: uppercase;
   margin-left: 1.2rem;
   font-size: 2.4rem;
-  color: #fff;
+  color: #3e3e3e;
 }
 
 .container {
   /* width: 100%; */
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 .container-details {
@@ -328,15 +196,7 @@ html {
   width: 50%;
 }
 
-.footer {
-  padding: 2rem;
-  background-color: #3e3e3e;
-  text-align: center;
-  color: #fff;
-  letter-spacing: 0.1rem;
-  margin-top: 4rem;
-  font-size: 1.8rem;
-}
+
 
 @media only screen and (max-width: 1200px) {
   .chart-2 {
@@ -352,17 +212,8 @@ html {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  html {
-    font-size: 50%;
-  }
-}
 
 @media only screen and (max-width: 600px) {
-  .header {
-    padding: 1rem 2rem 1rem 0;
-  }
-
   .container-details {
     flex-direction: column;
     align-items: center;
