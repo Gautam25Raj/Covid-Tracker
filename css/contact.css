@@ -113,7 +113,7 @@ main {
   .contact-svg {
     width: 100%;
     order: -1;
-    margin: 4rem 0;
+    margin: 8rem 0 6rem;
   }
 
   .contact-svg img {

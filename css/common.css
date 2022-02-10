@@ -147,6 +147,33 @@ html {
   font-weight: 300;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.line {
+  width: 30px;
+  height: 4px;
+  margin: 5px 0;
+  background-color: #fff;
+  transition: transform 0.3s ease-in;
+}
+
+.toggle .line-1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.toggle .line-2 {
+  opacity: 0;
+}
+
+.toggle .line-3 {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
 .footer {
   padding: 2rem;
   background-color: #3e3e3e;
@@ -170,5 +197,49 @@ html {
 @media only screen and (max-width: 600px) {
   .header {
     padding: 1rem 2rem 1rem 0;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navigation {
+    flex-direction: column;
+    position: absolute;
+    top: 10rem;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .navigation-item {
+    padding: 2rem;
+    width: 100%;
+    background-color: rgba(62, 62, 62, 0.9);
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .navigation-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .navigation-link {
+    color: #fff;
+  }
+
+  .navigation-item:hover {
+    border: 2px solid #fff;
+  }
+
+  .navigation-item:hover .navigation-link {
+    font-size: 2.5rem;
+  }
+
+  .open {
+    transform: translateY(0%);
   }
 }
