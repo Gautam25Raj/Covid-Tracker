@@ -1,5 +1,5 @@
 main {
-  margin: 0 6rem;
+  padding: 0 6rem;
 }
 
 .symptoms {
@@ -11,11 +11,15 @@ main {
 }
 
 .container {
-  margin: 5rem 0;
+  padding: 2rem 0;
 }
 
 .symp-container {
   margin: 3rem;
+}
+
+.symp-container:first-child {
+  margin: 0 3rem 3rem;
 }
 
 .symp-container:last-child {

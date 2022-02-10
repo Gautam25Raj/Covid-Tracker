@@ -91,6 +91,7 @@ html {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding-bottom: 4rem;
 }
 
 .header {
@@ -197,7 +198,6 @@ html {
   text-align: center;
   color: #fff;
   letter-spacing: 0.1rem;
-  margin-top: 4rem;
   font-size: 1.8rem;
 }
 
