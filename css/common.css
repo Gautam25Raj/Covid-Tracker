@@ -102,6 +102,23 @@ html {
   background-color: #3e3e3e;
 }
 
+.heading {
+  color: #292929;
+}
+
+.heading-h1 {
+  font-size: 2.8rem;
+}
+
+.heading-h2 {
+  font-size: 2.6rem;
+}
+
+.paragraph {
+  font-size: 2.2rem;
+  color: #3e3e3e;
+}
+
 .hide {
   display: none;
 }

@@ -1,0 +1,49 @@
+main {
+  margin: 0 6rem;
+}
+
+.symptoms {
+  margin: 4rem 0 3rem 0;
+}
+
+.heading-h3 {
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 5rem 0;
+}
+
+.symp-container {
+  margin: 3rem;
+}
+
+.symp-container:last-child {
+  margin: 3rem 3rem 0;
+}
+
+.list li {
+  margin: 0.2rem 0;
+  list-style-position: inside;
+}
+
+.gap {
+  margin: 1rem 0;
+  list-style-position: inside;
+}
+
+.difference {
+  margin-bottom: 3rem;
+}
+
+.difference-paragraph {
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
