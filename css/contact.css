@@ -1,7 +1,12 @@
 main {
   display: flex;
   padding: 0 6rem;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
+}
+
+.main {
+  background-image: linear-gradient(rgba(223, 223, 223, 0.6), rgb(223, 223, 223)),
+    url('../img/background.jpg');
 }
 
 .form {
