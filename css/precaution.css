@@ -1,7 +1,19 @@
+.main {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgb(255, 255, 255)
+    ),
+    url('../img/background.jpg');
+}
+
 .precaution {
   display: flex;
   width: 80%;
   margin: 0 auto;
+}
+
+.precaution a {
+  color: #000;
 }
 
 .precaution:not(:first-child) {
