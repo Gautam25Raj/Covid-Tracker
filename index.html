@@ -4,33 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Covid Tracker</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/precaution.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#333333" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <title>Covid Tracker: Home</title>
   </head>
   <body>
     <header class="header">
       <div class="logo">
         <img src="img/Icon.svg" alt="Covid Logo" class="logo-img" />
-
-        <h2 class="logo-head">
-          <span class="logo-head-1">Covid</span>
-          <span class="logo-head-2">Tracker</span>
-        </h2>
+        <h2 class="logo-head"><span class="logo-head-1">Covid</span> <span class="logo-head-2">Tracker</span></h2>
       </div>
-
       <ul class="navigation">
-        <li class="navigation-item">
-          <a class="navigation-link" href="symptom.html">Symptom</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="precaution.html">Precaution</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="contact.html">Contact</a>
-        </li>
+        <li class="navigation-item"><a class="navigation-link" href="symptom.html">Symptom</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="precaution.html">Precaution</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="contact.html">Contact</a></li>
       </ul>
-
       <button class="hamburger">
         <div class="line line-1"></div>
         <div class="line line-2"></div>
@@ -48,15 +46,7 @@
         <h1 class="country">Loading...</h1>
         <button class="country-change">Change</button>
         <div class="search-country hide">
-          <div class="search-box">
-            <input
-              type="text"
-              id="search-input"
-              placeholder="Search Country..."
-            />
-            <img class="close" src="" alt="Cross" />
-          </div>
-
+          <div class="search-box"><input type="text" id="search-input" placeholder="Search Country..." /> <img class="close" src="" alt="Cross" /></div>
           <div class="country-list"></div>
         </div>
       </section>
@@ -65,55 +55,41 @@
         <div class="details total-cases">
           <h2 class="details-head details-gap">Total Cases</h2>
           <p class="details-count details-cases details-gap">0</p>
-          <p class="details-add details-gap">
-            + <span class="details-cases-add">0</span>
-          </p>
+          <p class="details-add details-gap">+ <span class="details-cases-add">0</span></p>
           <div class="details-color details-color-cases"></div>
         </div>
 
         <div class="details recovered">
           <h2 class="details-head details-gap">Recovered</h2>
           <p class="details-count details-recovered details-gap">0</p>
-          <p class="details-add details-gap">
-            + <span class="details-recovered-add">0</span>
-          </p>
+          <p class="details-add details-gap">+ <span class="details-recovered-add">0</span></p>
           <div class="details-color details-color-recovered"></div>
         </div>
 
         <div class="details deaths">
           <h2 class="details-head details-gap">Deaths</h2>
           <p class="details-count details-deaths details-gap">0</p>
-          <p class="details-add details-gap">
-            + <span class="details-deaths-add">0</span>
-          </p>
+          <p class="details-add details-gap">+ <span class="details-deaths-add">0</span></p>
           <div class="details-color details-color-deaths"></div>
         </div>
       </section>
 
-      <section class="chart">
-        <canvas id="myChart-1"></canvas>
-      </section>
+      <section class="chart"><canvas id="myChart-1"></canvas></section>
 
       <section class="chart chart-2">
-        <div class="chart-s">
-          <canvas id="myChart-2"></canvas>
-        </div>
-
-        <div class="chart-s">
-          <canvas id="myChart-3" class="deaths-chart"></canvas>
-        </div>
+        <div class="chart-s"><canvas id="myChart-2"></canvas></div>
+        <div class="chart-s"><canvas id="myChart-3" class="deaths-chart"></canvas></div>
       </section>
     </main>
 
     <footer class="footer">Copyright &copy; 2022</footer>
-
+    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
       integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
     <script src="js/country.js"></script>
     <script src="js/apiData.js"></script>
     <script src="js/script.js"></script>
